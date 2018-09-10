@@ -147,8 +147,6 @@
     SUBDIR += fakebo
     SUBDIR += fakeident
     SUBDIR += fakeroot
-    SUBDIR += fastd
-    SUBDIR += fastd-devel
     SUBDIR += fbopenssl
     SUBDIR += fcheck
     SUBDIR += fcrackzip
@@ -294,6 +292,7 @@
     SUBDIR += jbrofuzz
     SUBDIR += john
     SUBDIR += kbfs
+    SUBDIR += kbfsd
     SUBDIR += kc
     SUBDIR += kc24
     SUBDIR += kdbx-viewer
@@ -316,6 +315,7 @@
     SUBDIR += knock
     SUBDIR += knocker
     SUBDIR += kpcli
+    SUBDIR += kpkpass
     SUBDIR += kqoauth
     SUBDIR += kr
     SUBDIR += krb5
@@ -400,6 +400,8 @@
     SUBDIR += logcheck
     SUBDIR += luasec
     SUBDIR += luasec-51
+    SUBDIR += lxqt-openssh-askpass
+    SUBDIR += lxqt-sudo
     SUBDIR += lynis
     SUBDIR += mac-robber
     SUBDIR += maia
@@ -423,6 +425,7 @@
     SUBDIR += morphis
     SUBDIR += munge
     SUBDIR += mussh
+    SUBDIR += n2n
     SUBDIR += nacl
     SUBDIR += ncrack
     SUBDIR += ncrypt
@@ -492,6 +495,7 @@
     SUBDIR += outguess
     SUBDIR += owasp-dependency-check
     SUBDIR += p11-kit
+    SUBDIR += p5-Alt-Crypt-RSA-BigInt
     SUBDIR += p5-Apache-Htpasswd
     SUBDIR += p5-App-Genpass
     SUBDIR += p5-App-TLSMe
@@ -949,6 +953,7 @@
     SUBDIR += py-gnupg
     SUBDIR += py-gnutls
     SUBDIR += py-google-auth
+    SUBDIR += py-google-auth-httplib2
     SUBDIR += py-gpgme
     SUBDIR += py-gpsoauth
     SUBDIR += py-gssapi
