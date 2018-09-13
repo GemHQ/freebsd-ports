@@ -4352,6 +4352,7 @@
     SUBDIR += py-aspyct
     SUBDIR += py-astor
     SUBDIR += py-astroid
+    SUBDIR += py-astroid1
     SUBDIR += py-asttokens
     SUBDIR += py-async_generator
     SUBDIR += py-async_timeout
@@ -4603,6 +4604,7 @@
     SUBDIR += py-grizzled
     SUBDIR += py-grouch
     SUBDIR += py-grpcio
+    SUBDIR += py-grpcio-gcp
     SUBDIR += py-grpcio-tools
     SUBDIR += py-gtfslib
     SUBDIR += py-gyp
