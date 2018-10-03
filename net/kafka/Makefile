@@ -4,7 +4,7 @@ PORTNAME=	kafka
 PORTVERSION=	2.0.0
 CATEGORIES=	net java
 MASTER_SITES=	APACHE/${PORTNAME}/${PORTVERSION}
-DISTNAME=	${PORTNAME}_2.12-${PORTVERSION}
+DISTNAME=	${PORTNAME}_2.11-${PORTVERSION}
 
 MAINTAINER=	timp87@gmail.com
 COMMENT=	Distributed streaming platform
@@ -31,7 +31,8 @@ KAFKA_BINS=	connect-distributed.sh connect-standalone.sh kafka-acls.sh \
 		kafka-broker-api-versions.sh kafka-configs.sh \
 		kafka-console-consumer.sh kafka-console-producer.sh \
 		kafka-consumer-groups.sh kafka-consumer-perf-test.sh \
-		kafka-delegation-tokens.sh kafka-delete-records.sh kafka-log-dirs.sh \
+		kafka-delegation-tokens.sh \
+		kafka-delete-records.sh kafka-dump-log.sh kafka-log-dirs.sh \
 		kafka-mirror-maker.sh kafka-preferred-replica-election.sh \
 		kafka-producer-perf-test.sh kafka-reassign-partitions.sh \
 		kafka-replica-verification.sh \
@@ -45,7 +46,7 @@ KAFKA_CONFIGS=	connect-console-sink.properties \
 		connect-file-source.properties connect-log4j.properties \
 		connect-standalone.properties consumer.properties \
 		log4j.properties producer.properties server.properties \
-		tools-log4j.properties
+		tools-log4j.properties trogdor.conf
 
 SUB_FILES=	kafka
 SUB_LIST=	JAVA=${JAVA} \
@@ -67,8 +68,6 @@ NO_BUILD=	yes
 NO_ARCH=	yes
 USE_JAVA=	yes
 JAVA_VERSION=	1.8+
-#JAVA_VENDOR=	openjdk
-JAVA_RUN=	yes
 USE_RC_SUBR=	kafka
 
 post-patch:
@@ -99,6 +98,6 @@ do-install:
 
 do-install-DOCS-on:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${EXTRACT_CMD} -xf ${WRKSRC}/site-docs/${PORTNAME}_2.12-${PORTVERSION}-site-docs.tgz -C ${STAGEDIR}${DOCSDIR}
+	${EXTRACT_CMD} -xf ${WRKSRC}/site-docs/${PORTNAME}_2.11-${PORTVERSION}-site-docs.tgz -C ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>
