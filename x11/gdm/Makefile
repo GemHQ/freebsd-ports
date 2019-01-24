@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	gdm
-PORTVERSION=	3.28.1
+PORTVERSION=	3.28.4
 CATEGORIES=	x11 gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome
@@ -15,6 +15,7 @@ BUILD_DEPENDS=	zenity>=3.0.0:x11/zenity \
 		iso-codes>=0:misc/iso-codes
 LIB_DEPENDS=	libck-connector.so:sysutils/consolekit2 \
 		libaccountsservice.so:sysutils/accountsservice \
+		libfribidi.so:converters/fribidi \
 		libcanberra.so:audio/libcanberra \
 		libcanberra-gtk3.so:audio/libcanberra-gtk3
 RUN_DEPENDS=	zenity>=3.0.0:x11/zenity \
@@ -41,7 +42,7 @@ PORTSCOUT=	limitw:1,even
 
 USES=		cpe gettext gmake gnome libtool pathfix pkgconfig tar:xz
 CPE_VENDOR=	gnome
-CPE_VENDOR=	gnome_display_manager
+CPE_PRODUCT=	gnome_display_manager
 USE_GNOME=	cairo dconf gtk30 intltool introspection
 USE_LDCONFIG=	yes
 USE_XORG=	x11 xau xcb xdmcp xorgproto

@@ -2,10 +2,10 @@
 
 PORTNAME=	transmission
 DISTVERSION=	2.94
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net-p2p
 
-MAINTAINER=	lebarondemerde@privacychain.ch
+MAINTAINER=	rigoletto@FreeBSD.org
 COMMENT=	Meta-port for Transmission BitTorrent client
 
 LICENSE=	GPLv2+ MIT

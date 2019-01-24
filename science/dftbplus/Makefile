@@ -2,7 +2,7 @@
 
 PORTNAME=	dftbplus
 DISTVERSION=	18.2
-PORTREVISION=	2
+PORTREVISION=	4
 CATEGORIES=	science
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -15,7 +15,7 @@ LIB_DEPENDS=	libblas.so:math/blas \
 		libomp.so:devel/openmp
 RUN_DEPENDS=	${PYNUMPY}
 
-USES=		fortran gmake python shebangfix
+USES=		fortran gmake python:2.7 shebangfix
 SHEBANG_FILES=	tools/dptools/bin/* tools/misc/* utils/srcmanip/* utils/build/* external/fypp/bin/* utils/get_opt_externals \
 		external/fypp/bin/fypp utils/test/testlist_to_fypp test/prog/dftb+/bin/tagdiff
 SHEBANG_GLOB=	*.py
@@ -54,7 +54,7 @@ SOCKETS_BINARY_ALIAS=	gcc=${CC}
 ARPACK_DESC=		Build with ARPACK for large eigenvalue problems
 ARPACK_MAKE_ARGS=	WITH_ARPACK=1
 ARPACK_MAKE_ARGS_OFF=	WITH_ARPACK=0
-ARPACK_LIB_DEPENDS=	libarpack.so:math/arpack
+ARPACK_LIB_DEPENDS=	libarpack.so:math/arpack-ng
 ARPACK_PREVENTS=	MPI # ARPACK is only used in a single-core application
 
 MAKE_JOBS_UNSAFE=	yes # race conditions when some options are ON

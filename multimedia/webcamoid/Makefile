@@ -2,7 +2,7 @@
 
 PORTNAME=	webcamoid
 DISTVERSION=	8.1.0
-PORTREVISION=	5
+PORTREVISION=	9
 CATEGORIES=	multimedia
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -11,6 +11,7 @@ COMMENT=	Full featured webcam suite
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+BUILD_DEPEDS=	${LOCALBASE}/include/linux/videodev2.h:multimedia/v4l_compat
 LIB_DEPENDS=	libasound.so:audio/alsa-lib \
 		libavcodec.so:multimedia/ffmpeg \
 		libjack.so:audio/jack \
@@ -22,7 +23,7 @@ USE_GITHUB=	yes
 USE_GNOME=	glib20
 USE_GSTREAMER1=	yes
 USE_GL=		gl
-USE_QT=		concurrent core gui multimedia network opengl qml quick svg widgets buildtools_build quickcontrols_run
+USE_QT=		concurrent core declarative gui multimedia network opengl svg widgets buildtools_build quickcontrols_run
 
 MAKE_ENV=	NOOSS=1 # NOOSS is because the OSS module attempts to use kevent on OSS devices, which is broken in the base
 QMAKE_ARGS=	INSTALLQMLDIR=${QT_QMLDIR} \

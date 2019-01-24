@@ -1,9 +1,10 @@
 # $FreeBSD$
 
 PORTNAME=	davix
-DISTVERSION=	0.6.9
-MASTER_SITES=	http://grid-deployment.web.cern.ch/grid-deployment/dms/lcgutil/tar/davix/${DISTVERSION}/
+DISTVERSION=	0.7.1
+PORTREVISION=	1
 CATEGORIES=	www
+MASTER_SITES=	https://github.com/cern-fts/davix/releases/download/R_${DISTVERSION:S/./_/g}/
 
 MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Make the task of managing files over HTTP-based protocols simple
@@ -13,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libuuid.so:misc/e2fsprogs-libuuid
 
-USES=		cmake:outsource compiler:c++11-lang gnome localbase:ldflags python:build shebangfix ssl
+USES=		cmake compiler:c++11-lang gnome localbase:ldflags python:build shebangfix ssl
 SHEBANG_GLOB=	*.py
 USE_GNOME=	libxml2
 USE_LDCONFIG=	yes

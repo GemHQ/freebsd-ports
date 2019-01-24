@@ -2,17 +2,17 @@
 # $FreeBSD$
 
 PORTNAME=	thunderbird
-DISTVERSION=	60.2.1
+DISTVERSION=	60.5.0
 CATEGORIES=	mail news net-im ipv6
 MASTER_SITES=	MOZILLA/${PORTNAME}/releases/${DISTVERSION}/source \
-		MOZILLA/${PORTNAME}/candidates/${DISTVERSION}-candidates/build1/source
+		MOZILLA/${PORTNAME}/candidates/${DISTVERSION}-candidates/build2/source
 DISTFILES=	${DISTNAME}.source${EXTRACT_SUFX}
 
 MAINTAINER=	gecko@FreeBSD.org
 COMMENT=	Mozilla Thunderbird is standalone mail and news that stands above
 
 BUILD_DEPENDS=	nspr>=4.19:devel/nspr \
-		nss>=3.36.1:security/nss \
+		nss>=3.36.7:security/nss \
 		icu>=59.1,1:devel/icu \
 		libevent>=2.1.8:devel/libevent \
 		harfbuzz>=1.7.6:print/harfbuzz \
@@ -26,13 +26,11 @@ BUILD_DEPENDS=	nspr>=4.19:devel/nspr \
 		autoconf-2.13:devel/autoconf213 \
 		yasm:devel/yasm \
 		zip:archivers/zip
-#		soundtouch>=1.9.0:audio/soundtouch \
 
 SSP_UNSAFE=	yes
 USE_GECKO=	gecko
-USE_MOZILLA=	-cairo -soundtouch
+USE_MOZILLA=	-webp
 
-USE_GL=		gl
 USES=		tar:xz
 
 MOZ_OPTIONS=	--enable-application=comm/mail --enable-official-branding
@@ -48,7 +46,6 @@ MOZ_PIS_SCRIPTS=moz_pis_S50cleanhome
 
 OPTIONS_DEFINE=	LIGHTNING
 OPTIONS_DEFAULT=CANBERRA LIGHTNING
-OPTIONS_EXCLUDE=BUNDLED_CAIRO
 
 .include "${.CURDIR}/../../www/firefox/Makefile.options"
 .include <bsd.port.pre.mk>
