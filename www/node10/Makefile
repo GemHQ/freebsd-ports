@@ -1,9 +1,8 @@
 # $FreeBSD$
 
 PORTNAME=	node
-PORTVERSION=	10.15.0
+PORTVERSION=	10.15.1
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	http://nodejs.org/dist/v${PORTVERSION}/
 PKGNAMESUFFIX=	10
@@ -74,11 +73,11 @@ LIB_DEPENDS+=	libcares.so:dns/c-ares\
 BROKEN_SSL+=	base
 .endif
 
-.include <bsd.port.pre.mk>
-
-.if ${ARCH} != amd64 && ${ARCH} != i386
+.if ${PORT_OPTIONS:MBUNDLED_SSL} && ${ARCH} != amd64 && ${ARCH} != i386
 CONFIGURE_ARGS+=--openssl-no-asm
 .endif
+
+.include <bsd.port.pre.mk>
 
 .if ${CHOSEN_COMPILER_TYPE} == gcc
 # GCC does not expose std::snprintf() without this define
