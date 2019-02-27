@@ -506,7 +506,6 @@
     SUBDIR += editline
     SUBDIR += efivar
     SUBDIR += efl
-    SUBDIR += eggdbus
     SUBDIR += egypt
     SUBDIR += eiffelstudio
     SUBDIR += elf
@@ -933,6 +932,7 @@
     SUBDIR += horde-whups
     SUBDIR += hp48cc
     SUBDIR += hp48xgcc
+    SUBDIR += hpx
     SUBDIR += hs-Boolean
     SUBDIR += hs-BoundedChan
     SUBDIR += hs-ConfigFile
@@ -1457,7 +1457,6 @@
     SUBDIR += libfwsi
     SUBDIR += libg19
     SUBDIR += libg19draw
-    SUBDIR += libgalago
     SUBDIR += libgamepad
     SUBDIR += libgdata
     SUBDIR += libgee
@@ -1698,6 +1697,7 @@
     SUBDIR += lmdbg
     SUBDIR += lndir
     SUBDIR += lnphost
+    SUBDIR += loccount
     SUBDIR += lockfree-malloc
     SUBDIR += log4c
     SUBDIR += log4cplus
@@ -1772,6 +1772,7 @@
     SUBDIR += mercurialeclipse
     SUBDIR += mergify
     SUBDIR += meson
+    SUBDIR += mill
     SUBDIR += mime
     SUBDIR += mimir
     SUBDIR += mingw32-bin-msvcrt
@@ -4745,6 +4746,7 @@
     SUBDIR += py-kjbuckets
     SUBDIR += py-knack
     SUBDIR += py-kqueue
+    SUBDIR += py-lark-parser
     SUBDIR += py-lazr.config
     SUBDIR += py-lazr.delegates
     SUBDIR += py-lazy
@@ -5083,6 +5085,7 @@
     SUBDIR += py-ratelimiter
     SUBDIR += py-rauth
     SUBDIR += py-raven
+    SUBDIR += py-rchitect
     SUBDIR += py-rcsparse
     SUBDIR += py-readme_renderer
     SUBDIR += py-rebulk
@@ -5486,6 +5489,7 @@
     SUBDIR += racer
     SUBDIR += racerd
     SUBDIR += radare2
+    SUBDIR += radian
     SUBDIR += ragel
     SUBDIR += raknet
     SUBDIR += range-v3
@@ -5525,7 +5529,6 @@
     SUBDIR += rpm-spec-mode.el
     SUBDIR += rsvndump
     SUBDIR += rth
-    SUBDIR += rtichoke
     SUBDIR += ruby-bsearch
     SUBDIR += ruby-build
     SUBDIR += ruby-gems
