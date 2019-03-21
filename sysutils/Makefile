@@ -35,7 +35,6 @@
     SUBDIR += anacron
     SUBDIR += and
     SUBDIR += android-file-transfer
-    SUBDIR += android-file-transfer-qt4
     SUBDIR += android-file-transfer-qt5
     SUBDIR += ansible
     SUBDIR += ansible1
@@ -75,12 +74,6 @@
     SUBDIR += backuppc-devel
     SUBDIR += backuppc4
     SUBDIR += backupuser
-    SUBDIR += bacula-bat
-    SUBDIR += bacula-client
-    SUBDIR += bacula-client-static
-    SUBDIR += bacula-docs
-    SUBDIR += bacula-server
-    SUBDIR += bacula9-bat
     SUBDIR += bacula9-client
     SUBDIR += bacula9-client-static
     SUBDIR += bacula9-docs
@@ -91,12 +84,9 @@
     SUBDIR += bareos-client-static
     SUBDIR += bareos-docs
     SUBDIR += bareos-server
-    SUBDIR += bareos-traymonitor
-    SUBDIR += bareos16-bat
     SUBDIR += bareos16-client
     SUBDIR += bareos16-client-static
     SUBDIR += bareos16-server
-    SUBDIR += bareos16-traymonitor
     SUBDIR += bastille
     SUBDIR += batmon
     SUBDIR += battmond
@@ -278,6 +268,7 @@
     SUBDIR += dsbmc
     SUBDIR += dsbmc-cli
     SUBDIR += dsbmd
+    SUBDIR += dsbsu
     SUBDIR += dsbwrtsysctl
     SUBDIR += dt
     SUBDIR += dtc
@@ -755,6 +746,7 @@
     SUBDIR += npadmin
     SUBDIR += nq
     SUBDIR += nrg2iso
+    SUBDIR += nsysctl
     SUBDIR += ntfy
     SUBDIR += nut
     SUBDIR += nvclock
@@ -856,6 +848,7 @@
     SUBDIR += panicmail
     SUBDIR += parafly
     SUBDIR += parallel
+    SUBDIR += pass-otp
     SUBDIR += password-store
     SUBDIR += passwordsafe
     SUBDIR += patchelf
@@ -920,7 +913,6 @@
     SUBDIR += pmt
     SUBDIR += policykit
     SUBDIR += policykit-gnome
-    SUBDIR += policykit-qt
     SUBDIR += polkit
     SUBDIR += polkit-gnome
     SUBDIR += polkit-qt
@@ -944,10 +936,8 @@
     SUBDIR += ptools
     SUBDIR += puppet-lint
     SUBDIR += puppet-mode.el
-    SUBDIR += puppet4
     SUBDIR += puppet5
     SUBDIR += puppet6
-    SUBDIR += puppetserver
     SUBDIR += puppetserver5
     SUBDIR += puppetserver6
     SUBDIR += pv
@@ -992,6 +982,7 @@
     SUBDIR += py-azure-cli-iot
     SUBDIR += py-azure-cli-iotcentral
     SUBDIR += py-azure-cli-keyvault
+    SUBDIR += py-azure-cli-kusto
     SUBDIR += py-azure-cli-lab
     SUBDIR += py-azure-cli-maps
     SUBDIR += py-azure-cli-monitor
@@ -1005,6 +996,7 @@
     SUBDIR += py-azure-cli-resource
     SUBDIR += py-azure-cli-role
     SUBDIR += py-azure-cli-search
+    SUBDIR += py-azure-cli-security
     SUBDIR += py-azure-cli-servicebus
     SUBDIR += py-azure-cli-servicefabric
     SUBDIR += py-azure-cli-signalr
@@ -1016,6 +1008,7 @@
     SUBDIR += py-bcfg2
     SUBDIR += py-bitrot
     SUBDIR += py-cdmi
+    SUBDIR += py-cpuinfo
     SUBDIR += py-croniter
     SUBDIR += py-crontab
     SUBDIR += py-diffoscope
@@ -1075,15 +1068,12 @@
     SUBDIR += qdirstat
     SUBDIR += qjail
     SUBDIR += qlogtools
-    SUBDIR += qpxtool
     SUBDIR += qsudo
-    SUBDIR += qsynergy
     SUBDIR += qt5-qtdiag
     SUBDIR += qt5-qtpaths
     SUBDIR += qt5-qtplugininfo
     SUBDIR += qtpass
     SUBDIR += quicksynergy
-    SUBDIR += qzeitgeist
     SUBDIR += racktables
     SUBDIR += radeontool
     SUBDIR += radeontop
@@ -1240,7 +1230,6 @@
     SUBDIR += scterc
     SUBDIR += sd-agent
     SUBDIR += sdparm
-    SUBDIR += searchmonkey
     SUBDIR += seatools
     SUBDIR += sec
     SUBDIR += serf
@@ -1317,6 +1306,7 @@
     SUBDIR += syslog-ng317
     SUBDIR += syslog-ng318
     SUBDIR += syslog-ng319
+    SUBDIR += syslog-ng320
     SUBDIR += syslog-ng39
     SUBDIR += syslogger
     SUBDIR += sysrc
@@ -1423,7 +1413,6 @@
     SUBDIR += ufs_copy
     SUBDIR += uhidd
     SUBDIR += uif2iso
-    SUBDIR += unetbootin
     SUBDIR += unieject
     SUBDIR += uniutils
     SUBDIR += unquote
@@ -1502,7 +1491,7 @@
     SUBDIR += xe
     SUBDIR += xe-guest-utilities
     SUBDIR += xen-guest-tools
-    SUBDIR += xen-tools411
+    SUBDIR += xen-tools
     SUBDIR += xen-tools47
     SUBDIR += xfburn
     SUBDIR += xfce4-battery-plugin
@@ -1549,6 +1538,8 @@
     SUBDIR += zisofs-tools
     SUBDIR += znapzend
     SUBDIR += zogftw
+    SUBDIR += zol
+    SUBDIR += zol-kmod
     SUBDIR += zrep
     SUBDIR += zrepl
     SUBDIR += zsd
