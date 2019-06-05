@@ -3,6 +3,7 @@
 
 PORTNAME=	bundler
 PORTVERSION=	2.0.1
+PORTEPOCH=	1
 CATEGORIES=	sysutils rubygems
 MASTER_SITES=	RG
 

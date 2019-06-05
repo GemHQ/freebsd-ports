@@ -21,17 +21,17 @@
     SUBDIR += chexedit
     SUBDIR += codelite
     SUBDIR += cooledit
-    SUBDIR += cudatext
     SUBDIR += cream
+    SUBDIR += cudatext
     SUBDIR += deforaos-editor
     SUBDIR += dexed
     SUBDIR += dhex
     SUBDIR += diakonos
     SUBDIR += dkns
-    SUBDIR += dlangide
     SUBDIR += drjava
     SUBDIR += dte
     SUBDIR += e3
+    SUBDIR += e93
     SUBDIR += ecce
     SUBDIR += ecrire
     SUBDIR += edith
@@ -55,7 +55,6 @@
     SUBDIR += gnome-latex
     SUBDIR += gobby
     SUBDIR += gomate
-    SUBDIR += gwrite
     SUBDIR += heme
     SUBDIR += hexcurse
     SUBDIR += hexedit
@@ -99,6 +98,7 @@
     SUBDIR += libreoffice-cy
     SUBDIR += libreoffice-da
     SUBDIR += libreoffice-dgo
+    SUBDIR += libreoffice-dsb
     SUBDIR += libreoffice-dz
     SUBDIR += libreoffice-el
     SUBDIR += libreoffice-en_GB
@@ -123,6 +123,7 @@
     SUBDIR += libreoffice-is
     SUBDIR += libreoffice-it
     SUBDIR += libreoffice-ka
+    SUBDIR += libreoffice-kab
     SUBDIR += libreoffice-kk
     SUBDIR += libreoffice-km
     SUBDIR += libreoffice-kmr_Latn
@@ -252,6 +253,7 @@
     SUBDIR += xcoral
     SUBDIR += xed
     SUBDIR += xi-core
+    SUBDIR += xi-term
     SUBDIR += xmlcopyeditor
     SUBDIR += xvile
     SUBDIR += yudit

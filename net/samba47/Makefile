@@ -3,7 +3,7 @@
 
 PORTNAME=			${SAMBA4_BASENAME}47
 PORTVERSION=			${SAMBA4_VERSION}
-PORTREVISION=			0
+PORTREVISION=			1
 CATEGORIES?=			net
 MASTER_SITES=			SAMBA/samba/stable SAMBA/samba/rc
 DISTNAME=			${SAMBA4_DISTNAME}
@@ -11,7 +11,11 @@ DISTNAME=			${SAMBA4_DISTNAME}
 MAINTAINER=			timur@FreeBSD.org
 COMMENT=			Free SMB/CIFS and AD/DC server and client for Unix
 
-LICENSE=			GPLv3
+LICENSE=			GPLv3+
+LICENSE_FILE=			${WRKSRC}/COPYING
+
+DEPRECATED=			yes
+EXPIRATION_DATE=		2019-08-19
 
 IGNORE_NONTHREAD_PYTHON=	needs port lang/python${PYTHON_SUFFIX} to be build with THREADS support
 
@@ -125,7 +129,7 @@ NSUPDATE_DESC=			Use samba NSUPDATE utility for AD DC
 # the system)
 # Readline(sponsored by Python)
 # XXX: USES=readline pollutes CPPFLAGS, so we explicitly put dependency
-LIB_DEPENDS+=			libreadline.so.7:devel/readline
+LIB_DEPENDS+=			libreadline.so.8:devel/readline
 # popt
 LIB_DEPENDS+=			libpopt.so:devel/popt
 # inotify
@@ -232,12 +236,12 @@ SAMBA4_BUNDLED_LIBS+=		replace
 # Don't use external libcom_err
 SAMBA4_BUNDLED_LIBS+=		com_err
 # Set the test environment variables
+TEST_USES=			python
 TEST_ENV+=			PYTHON="${PYTHON_CMD}" \
 				SHA1SUM=/sbin/sha1 \
 				SHA256SUM=/sbin/sha256 \
 				MD5SUM=/sbin/md5
-TEST_DEPENDS+=			python:lang/python \
-				bash:shells/bash \
+TEST_DEPENDS+=			bash:shells/bash \
 				tshark:net/tshark
 ##############################################################################
 CONFIGURE_ARGS+=		\
